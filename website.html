@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset ="UTF-8">
+<title>website using html css</title>
+<link rel="stylesheet" href="web.css">
+</head>
+
+<body>
+ <div class="main">
+                  <nav>
+                     <div class="logo">
+                       <img src="logo.png">
+                     </div>
+                    <div class="nav-links">
+                     <ul>
+                       <li><a href="file:///C:/Users/Admin/Desktop/web%20d/FRONT-END%20PROJECTS/web%20site/website.html">home</a></li>
+                       <li><a href="https://www.realme.com/in/realme-3-pro">Phone</a></li>
+                       <li><a href="https://www.realme.com/in/realme-3-pro/specs">Accessories</a></li>
+                       <li><a href="https://buy.realme.com/in/goods/108">Cart</a></li>
+                    </ul>
+                   </div>
+                  </nav>
+   
+
+     <div class="information">
+
+
+                 <div class="overlay"></div>
+                   <img src="mobile.png" class="mobile">
+        <div id="circle">
+
+               <div class="feature one">
+                 <img src="camera.png">
+                 <div>
+                    <h1>Camera</h1>
+                    <p>12MP, Wide Angle Lens</p>
+                 </div>
+               </div>
+
+             <div class="feature two">
+                <img src="processor.png">
+                 <div>
+                    <h1>Processor</h1>
+                    <p>Snapdragon Octa-core 11nm</p>
+                 </div>
+             </div>
+
+           <div class="feature three">
+             <img src="display.png">
+              <div>
+                    <h1>Display</h1>
+                    <p>6.5" Mini-Drop Fullscreen</p>
+              </div>
+           </div>
+
+           <div class="feature four">
+              <img src="battery.png">
+                 <div>
+                    <h1>Battery Life</h1>
+                    <p>5000 mAh, 72 hrs standby</p>
+                </div>
+           </div>
+        </div>
+  </div>
+
+         <div class="controls">
+            <img src="arrow.png" id="upBtn">
+              <h3>Features</h3>
+             <img src="arrow.png" id="downBtn">
+         </div>
+</div>
+
+<script>
+var circle = document.getElementById("circle");
+var upBtn = document.getElementById("upBtn");
+var downBtn = document.getElementById("downBtn");
+var rotateValue= circle.style.transform;
+var rotateSum;
+
+upBtn.onclick=function(){
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+}
+
+downBtn.onclick=function(){
+    rotateSum = rotateValue + "rotate(90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+}
+</script>
+</body>
+</html>
